@@ -6,6 +6,18 @@
   <title>Портфолио</title>
   <link rel="stylesheet" href="style.css">
 </head>
+  <script>
+  const toggleBtn = document.createElement("button");
+  toggleBtn.textContent = "Переключить тему";
+  toggleBtn.style.position = "fixed";
+  toggleBtn.style.top = "10px";
+  toggleBtn.style.right = "10px";
+  document.body.appendChild(toggleBtn);
+
+  toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-theme");
+  });
+</script>
 <body>
 
   <!-- Заголовок вашего сайта -->
